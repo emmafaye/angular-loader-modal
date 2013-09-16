@@ -5,7 +5,7 @@
   "authors": [
     "Matthew Hardnack <matthewhardnack@gmail.com>"
   ],
-  "description": "Creates a directive modal that can be toggled using the loaderModalAPI service.",
+  "description": "Creates a directive modal with a loading animation that can be toggled using it's angular service.",
   "keywords": [
     "angular",
     "loader",
@@ -17,7 +17,7 @@
     "animation"
   ],
   "dependencies": {
-    "angular": "1.2.0-rc.2"
+    "angular": ">=1.1.5"
   },
   "license": "MIT",
   "homepage": "http://www.matthewhardnack.com",
@@ -27,6 +27,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "private": true
+  ]
 }
