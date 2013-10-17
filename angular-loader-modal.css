@@ -3,14 +3,7 @@
 #angular_loader_modal.hide .spinner{display:none}
 #angular_loader_modal .spinner{position:absolute;margin:auto;top:0;right:0;left:0;bottom:0;height:60px;width:60px;border:6px solid rgba(255,255,255,0.15);-webkit-border-radius:100%;border-radius:100%;-webkit-animation:infiniteRotation .6s infinite linear;-moz-animation:infiniteRotation .6s infinite linear;-o-animation:infiniteRotation .6s infinite linear;-ms-animation:infiniteRotation .6s infinite linear;animation:infiniteRotation .6s infinite linear;}
 #angular_loader_modal .spinner:before{content:"";display:block;position:absolute;left:-6px;top:-6px;height:100%;width:100%;border:6px solid transparent;border-top:6px solid rgba(255,255,255,0.8);-webkit-border-radius:100%;border-radius:100%}
-@-moz-keyframes infiniteRotation{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
-100%{-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}
-}@-webkit-keyframes infiniteRotation{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
-100%{-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}
-}@-o-keyframes infiniteRotation{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
-100%{-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}
-}@-ms-keyframes infiniteRotation{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
-100%{-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}
-}@keyframes infiniteRotation{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
-100%{-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}
-}
+@-webkit-keyframes infiniteRotation { from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(359deg);} }
+@-moz-keyframes infiniteRotation { from {-moz-transform: rotate(0deg);} to {-moz-transform: rotate(359deg);} }
+@-o-keyframes infiniteRotation { from {-o-transform: rotate(0deg);} to {-o-transform: rotate(359deg);} }
+@keyframes infiniteRotation { from {transform: rotate(0deg);} to {transform: rotate(359deg);} }
