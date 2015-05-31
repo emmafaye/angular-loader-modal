@@ -29,7 +29,7 @@ module.directive('loader', ['loaderModalAPI', function(loaderModalAPI) {
         replace: true,
         template: '<div id="angular_loader_modal"><div class="spinner"></div></div>',
         link: function(scope, element, attrs) {
-            scope.$parent.$on('loaderModalAPI.updated', function() {
+            scope.$on('loaderModalAPI.updated', function() {
                 loaderModalAPI.visible ? element.removeClass('hide') : element.addClass('hide');
             }, true);
         }
